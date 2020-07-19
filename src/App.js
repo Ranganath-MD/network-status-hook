@@ -7,11 +7,28 @@ export default function App() {
   return (
     <div className="App">
       {online ? (
-        <div>
-          <h1>You are {status}</h1>
+        <div
+          style={{
+            backgroundColor: "limegreen",
+            width: 200,
+            margin: "auto",
+            padding: 5
+          }}
+        >
+          <p>You are {status}</p>
         </div>
       ) : (
-        <div>You are {status}, try connectin your network</div>
+        <div
+          style={{
+            backgroundColor: "#FF0000",
+            width: 200,
+            margin: "auto",
+            padding: 5,
+            color: "white"
+          }}
+        >
+          <p>You are {status}, try connecting your network</p>
+        </div>
       )}
     </div>
   );
